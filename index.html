@@ -61,6 +61,7 @@
             time--;
             if (time < 0) {
                 clearInterval(intervalId);
+                document.querySelector('h1').style.fontSize = '7vw';
                 document.querySelector('h1').textContent = 'Finished! Let\'s get back to the work';
                 setTimeout(function() {
                     window.close();
